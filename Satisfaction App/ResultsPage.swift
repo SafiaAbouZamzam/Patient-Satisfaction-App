@@ -7,17 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
-class ResultsPage: QuestionController {
- //   var answers: [String] = []
-    
-//    @IBOutlet weak var answerLabel: UILabel!
-//    @IBOutlet weak var emailOutlet: UITextField!
-//    @IBOutlet weak var sendOutlet: UIButton!
-//    
-//    
-//    @IBAction func sendAction(_ sender: UIButton) {
-//    }
-//    
+class ResultsPage: UIViewController {
+    var answers: [String] = []
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var emailOutlet: UITextField!
+    @IBOutlet weak var sendOutlet: UIButton!
+
+
+    @IBAction func sendAction(_ sender: UIButton) {
+    }
+
     
 }
