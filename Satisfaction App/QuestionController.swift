@@ -13,8 +13,8 @@ class QuestionController: UIViewController {
 
     @IBOutlet weak var yesOutlet: UIButton!
     @IBOutlet weak var noOutlet: UIButton!
-    @IBOutlet weak var questionLabel: UILabel!
-
+    @IBOutlet weak var questionLabel: UITextView!
+    
     var questionArray: [String] = ["Are you satisfied with your current health?", "Were you comfortable in the presence of your practitioner?", "Were you satisfied with your patient care experience?", "Are you alive?"]
     var index = 0
     var answers: [String] = []
@@ -49,6 +49,7 @@ class QuestionController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         questionLabel?.text = questionArray[0]
     }
     
@@ -59,7 +60,26 @@ class QuestionController: UIViewController {
         
         let destination = segue.destination as! ResultsPage
         destination.answers = answers
+        destination.questionArray = questionArray
+    }
+    
+    func setupViews() {
+//        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
+//        yesOutlet.layer.shadowOpacity = 0.5
+//        yesOutlet.layer.shadowColor = UIColor.black.cgColor
+//        yesOutlet.layer.shadowRadius = 35
+ 
+        yesOutlet.layer.cornerRadius = 32
+        yesOutlet.layer.masksToBounds = true
         
+        noOutlet.layer.cornerRadius = 32
+        noOutlet.layer.masksToBounds = true
+        
+ //       outputCardView.layer.borderWidth = 1
+//        outputCardView.layer.borderColor = UIColor.tcHotPink.cgColor
+        
+//        resetButton.layer.cornerRadius = 8
+//        resetButton.layer.masksToBounds = true
     }
 
 }
