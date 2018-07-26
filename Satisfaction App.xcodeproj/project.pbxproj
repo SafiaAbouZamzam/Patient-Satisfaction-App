@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330DF857210A796B007B861A /* InstructionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330DF856210A796B007B861A /* InstructionVC.swift */; };
 		33D47FAE2107BEA70063E3B7 /* ResultsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D47FAD2107BEA70063E3B7 /* ResultsPage.swift */; };
 		33DB2D7D21078B30001E3044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB2D7C21078B30001E3044 /* AppDelegate.swift */; };
 		33DB2D7F21078B30001E3044 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB2D7E21078B30001E3044 /* QuestionController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330DF856210A796B007B861A /* InstructionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionVC.swift; sourceTree = "<group>"; };
 		33D47FAD2107BEA70063E3B7 /* ResultsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPage.swift; sourceTree = "<group>"; };
 		33DB2D7921078B30001E3044 /* Satisfaction App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Satisfaction App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DB2D7C21078B30001E3044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				33DB2D7C21078B30001E3044 /* AppDelegate.swift */,
-				33DB2D7E21078B30001E3044 /* QuestionController.swift */,
+				330DF856210A796B007B861A /* InstructionVC.swift */,
 				33DB2D8021078B30001E3044 /* Main.storyboard */,
+				33DB2D7E21078B30001E3044 /* QuestionController.swift */,
 				33D47FAD2107BEA70063E3B7 /* ResultsPage.swift */,
 				33E9A7FD21091E1600590D53 /* EmailAPI.swift */,
 				33DB2D8321078B32001E3044 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				33DB2D7F21078B30001E3044 /* QuestionController.swift in Sources */,
 				33DB2D7D21078B30001E3044 /* AppDelegate.swift in Sources */,
+				330DF857210A796B007B861A /* InstructionVC.swift in Sources */,
 				33D47FAE2107BEA70063E3B7 /* ResultsPage.swift in Sources */,
 				33E9A7FE21091E1600590D53 /* EmailAPI.swift in Sources */,
 			);

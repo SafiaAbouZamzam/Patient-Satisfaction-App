@@ -17,8 +17,8 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
     var toDisplayQAndA: String = ""
     
     @IBOutlet weak var sendOutlet: UIButton!
-    @IBOutlet weak var answerLabel: UITextView!
-    
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var scrollOutlet: UIScrollView!
     @IBOutlet weak var emailOutlet: UITextField!
     
     @IBAction func sendAction(_ sender: UIButton) {
@@ -41,29 +41,30 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
         
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
-        
-        
-        
-        
+    
     }
     
+   
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+         controller.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
 
         setupViews()
         
-        var toDisplayQuestion: String = ""
-        for question in questionArray {
-            toDisplayQuestion += question + "\n"
-        }
-        var toDisplayAnswer: String = ""
-        for answer in answers {
-            toDisplayAnswer += answer + "\n"
-        }
-        
+//        var toDisplayQuestion: String = ""
+//        for question in questionArray {
+//            toDisplayQuestion += question + "\n"
+//        }
+//        var toDisplayAnswer: String = ""
+//        for answer in answers {
+//            toDisplayAnswer += answer + "\n"
+//        }
+//
         
         for index in 0..<questionArray.count {
-                toDisplayQAndA.append(questionArray[index] + " " + answers[index] + " \n")
+                toDisplayQAndA.append(questionArray[index] + " \n" + answers[index] + " \n" + "\n")
         }
 
         answerLabel.text = toDisplayQAndA
@@ -74,12 +75,18 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
     
     func setupViews() {
 
-        answerLabel.layer.cornerRadius = 32
+        answerLabel.layer.cornerRadius = 24
         answerLabel.layer.masksToBounds = true
         
         sendOutlet.layer.cornerRadius = 16
         sendOutlet.layer.masksToBounds = true
         
+        scrollOutlet.layer.cornerRadius = 24
+        scrollOutlet.layer.masksToBounds = true
+        
+ //       emailOutlet.adjustsFontSizeToFitWidth = true
+        emailOutlet.layer.cornerRadius = 16
+        emailOutlet.layer.masksToBounds = true
 
     }
     

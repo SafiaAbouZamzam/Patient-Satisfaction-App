@@ -13,14 +13,15 @@ class QuestionController: UIViewController {
 
     @IBOutlet weak var yesOutlet: UIButton!
     @IBOutlet weak var noOutlet: UIButton!
-    @IBOutlet weak var questionLabel: UITextView!
+    @IBOutlet weak var questionLabel: UILabel!
     
-    var questionArray: [String] = ["Are you satisfied with your current health?", "Were you comfortable in the presence of your practitioner?", "Were you satisfied with your patient care experience?", "Are you alive?"]
+    var questionArray: [String] = [" 1. Are you satisfied with your current health?", " 2. Were you comfortable in the presence of your practitioner?", " 3. Were you satisfied with your patient care experience?", " 4. Are you alive?"]
+    
     var index = 0
     var answers: [String] = []
     
     @IBAction func yesAction(_ sender: UIButton) {
-        answers.append("Yes")
+        answers.append(" Yes")
         for answer in answers{
             print(answer)
         }
@@ -34,7 +35,7 @@ class QuestionController: UIViewController {
     }
     
     @IBAction func noAction(_ sender: UIButton) {
-        answers.append("No")
+        answers.append(" No")
         for answer in answers{
             print(answer)
         }
@@ -64,10 +65,10 @@ class QuestionController: UIViewController {
     }
     
     func setupViews() {
-//        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
-//        yesOutlet.layer.shadowOpacity = 0.5
-//        yesOutlet.layer.shadowColor = UIColor.black.cgColor
-//        yesOutlet.layer.shadowRadius = 35
+        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
+        yesOutlet.layer.shadowOpacity = 0.5
+        yesOutlet.layer.shadowColor = UIColor.black.cgColor
+        yesOutlet.layer.shadowRadius = 35
  
         yesOutlet.layer.cornerRadius = 32
         yesOutlet.layer.masksToBounds = true
