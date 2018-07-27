@@ -83,5 +83,7 @@ class QuestionController: UIViewController {
 //        resetButton.layer.masksToBounds = true
     }
 
+    
+    //background color = 00236F
 }
 
