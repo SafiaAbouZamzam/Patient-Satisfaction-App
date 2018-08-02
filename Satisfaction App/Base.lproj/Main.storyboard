@@ -18,18 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-MT-i8b">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-MT-i8b">
                                 <rect key="frame" x="50" y="70" width="275" height="572"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-Yl-UcA">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="478.5"/>
-                                        <string key="text">The following will present a series of yes or no questions. Please answer honestly as the results will be used as data for patient care satisfaction and quality of life.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The following will present a series of yes or no questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-Yl-UcA">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="191.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.89952375856164379" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-mj-PCj">
-                                        <rect key="frame" x="0.0" y="478.5" width="275" height="93.5"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="275" height="137.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
@@ -39,6 +38,12 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="lF9-Hb-XkZ"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This survey was based on the RAND Medical Outcomes Study." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-rO-NE8">
+                                        <rect key="frame" x="0.0" y="529" width="275" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -73,10 +78,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6Q-Tm-0Cv">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="199"/>
-                                        <color key="backgroundColor" red="0.97311276197433472" green="0.85708695650100708" blue="0.66574651002883911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="Yes">
-                                            <color key="titleColor" red="0.25897646860024742" green="0.49089100413752812" blue="0.82428127527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="yesAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZU-5z-gu0"/>
@@ -90,10 +95,10 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-QM-2Ip">
                                         <rect key="frame" x="0.0" y="398.5" width="325" height="198.5"/>
-                                        <color key="backgroundColor" red="0.97311276197433472" green="0.85708695650100708" blue="0.66574651002883911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="No">
-                                            <color key="titleColor" red="0.25882352941176467" green="0.49019607843137253" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="noAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQA-WP-l7o"/>
@@ -106,7 +111,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.00036008117604069412" green="0.17008224129676819" blue="0.41889643669128418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.16862745098039217" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YbJ-jO-yBr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="5w8-IO-uPb"/>
                             <constraint firstItem="YbJ-jO-yBr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="9WC-en-qsg"/>
@@ -154,11 +159,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                     </textField>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-uk-Vya">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-uk-Vya">
                                         <rect key="frame" x="0.0" y="469" width="325" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="150" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Da-0MH">
-                                                <rect key="frame" x="0.0" y="19" width="325" height="75"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="150" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Da-0MH">
+                                                <rect key="frame" x="8" y="18" width="309" height="91"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -166,14 +171,16 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ULc-Da-0MH" secondAttribute="bottom" constant="84" id="5WA-Lx-veX"/>
-                                            <constraint firstAttribute="trailing" secondItem="ULc-Da-0MH" secondAttribute="trailing" id="7d9-4L-LtX"/>
-                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="top" secondItem="1jg-uk-Vya" secondAttribute="top" constant="19" id="RLZ-dz-M4N"/>
-                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="centerX" secondItem="1jg-uk-Vya" secondAttribute="centerX" id="aua-ga-pR2"/>
-                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="leading" secondItem="1jg-uk-Vya" secondAttribute="leading" id="n1w-Oi-sra"/>
+                                            <constraint firstAttribute="bottom" secondItem="ULc-Da-0MH" secondAttribute="bottom" constant="10" id="I2k-jS-wze"/>
+                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="top" secondItem="1jg-uk-Vya" secondAttribute="top" constant="10" id="LuJ-H3-nSV"/>
+                                            <constraint firstAttribute="trailing" secondItem="ULc-Da-0MH" secondAttribute="trailing" constant="10" id="YRm-mp-wfx"/>
+                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="leading" secondItem="1jg-uk-Vya" secondAttribute="leading" constant="10" id="qoZ-dp-q0k"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ULc-Da-0MH" firstAttribute="width" secondItem="TdK-41-151" secondAttribute="width" id="T8C-on-gU3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.00036008117604069412" green="0.17008224129676819" blue="0.41889643669128418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
