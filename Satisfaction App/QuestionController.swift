@@ -16,7 +16,9 @@ class QuestionController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     var questionArray: [String] = ["1. Would you say your health is good?",
+                                   
                                    "2. Is your health better than a year ago?",
+                                   
                                    "3. Does your health limit you in: \n \na. lifting or carrying groceries?",
                                     "b. climbing several flights of stairs?",
                                     "c. climbing one flight of stairs?",
@@ -25,31 +27,41 @@ class QuestionController: UIViewController {
                                     "f. walking several blocks?",
                                     "g. walking one block?",
                                     "h. bathing or dressing yourself?",
-                                    "i. vigorous activities (strenuous sports, lifting heavy objects)?",
-                                    "j. moderate activities (moving a table, pushing a vacuum cleaner, bowling, or playing golf)?",
-                                    "4. Due to health, in the past month have you: \n \na. accomplished less than you would like?",
+                                    
+                                    "4. Does your health limit you in: \n \na. vigorous activities (strenuous sports, lifting heavy objects)?",
+                                    "b. moderate activities (moving a table, pushing a vacuum cleaner, bowling, or playing golf)?",
+                                    
+                                    "5. Due to health, in the past month have you: \n \na. accomplished less than you would like?",
                                     "b. cut down the amount of time you spend on work or other activities?",
                                     "c. limited the kind of work or other activities?",
                                     "d. had difficulty performing the work or other activites?",
-                                    "5. Due to emotional problems, in the past month have you: \n \na. accomplished less than you would like?",
+                                   
+                                    "6. Due to emotional problems, in the past month have you: \n \na. accomplished less than you would like?",
                                     "b. cut down the amount of time you spend on work or other activities?",
                                     "c. performed work or other activities as carefully as usual?",
-                                    "6. In the past month have your health and/or emotional problems interfered with your normal social activities with family or friends?",
-                                    "7. In the past month, have you been in bodily pain?",
-                                    "8. In the past month, has pain interfered with your normal work (both within and outside the household)?",
-                                    "9. At any time in the past month have you: \n \na. felt full of pep?",
-                                    "b. been exceptionally nervous?",
-                                    "c. felt so down that nothing could cheer you up?",
-                                    "d. felt calm and peaceful?",
-                                    "e. had a lot of energy?",
-                                    "f. felt downhearted and blue?",
-                                    "g. felt worn out?",
-                                    "h. felt happy?",
-                                    "i. felt tired?",
-                                    "10. I seem to get sick a little easier than other people.",
-                                    "11. I am as healthy as anybody I know.",
-                                    "12. I expect my health to get worse.",
-                                    "13. My health is excellent."]
+                                    
+                                    "7. In the past month have your health and/or emotional problems interfered with your normal social activities with family or friends?",
+                                    
+                                    "8. In the past month, have you been in bodily pain?",
+                                    
+                                    "9. In the past month, has pain interfered with your normal work (both within and outside the household)?",
+                                   
+                                    "10. At any time in the past month have you: \n \na. felt full of pep?",
+                                    "b. felt calm and peaceful?",
+                                    "c. had a lot of energy?",
+                                    "d. felt happy?",
+                                    
+                                    "11. At any time in the past month have you: \n \na. felt tired?",
+                                    "b. felt worn out?",
+                                    "c. been exceptionally nervous?",
+                                    "d. felt downhearted and blue?",
+                                    "e. felt so down that nothing could cheer you up?",
+
+
+                                    "12. I seem to get sick a little easier than other people.",
+                                    "13. I am as healthy as anybody I know.",
+                                    "14. I expect my health to get worse.",
+                                    "15. My health is excellent."]
     
     var index = 0
     var answers: [String] = []
