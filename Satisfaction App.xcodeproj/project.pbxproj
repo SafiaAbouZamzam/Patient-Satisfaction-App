@@ -14,7 +14,6 @@
 		33DB2D8221078B30001E3044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DB2D8021078B30001E3044 /* Main.storyboard */; };
 		33DB2D8421078B32001E3044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DB2D8321078B32001E3044 /* Assets.xcassets */; };
 		33DB2D8721078B32001E3044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DB2D8521078B32001E3044 /* LaunchScreen.storyboard */; };
-		33E9A7FE21091E1600590D53 /* EmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9A7FD21091E1600590D53 /* EmailAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		33DB2D8321078B32001E3044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DB2D8621078B32001E3044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33DB2D8821078B32001E3044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33E9A7FD21091E1600590D53 /* EmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAPI.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 				33DB2D8021078B30001E3044 /* Main.storyboard */,
 				33DB2D7E21078B30001E3044 /* QuestionController.swift */,
 				33D47FAD2107BEA70063E3B7 /* ResultsPage.swift */,
-				33E9A7FD21091E1600590D53 /* EmailAPI.swift */,
 				33DB2D8321078B32001E3044 /* Assets.xcassets */,
 				33DB2D8521078B32001E3044 /* LaunchScreen.storyboard */,
 				33DB2D8821078B32001E3044 /* Info.plist */,
@@ -148,7 +145,6 @@
 				33DB2D7D21078B30001E3044 /* AppDelegate.swift in Sources */,
 				330DF857210A796B007B861A /* InstructionVC.swift in Sources */,
 				33D47FAE2107BEA70063E3B7 /* ResultsPage.swift in Sources */,
-				33E9A7FE21091E1600590D53 /* EmailAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

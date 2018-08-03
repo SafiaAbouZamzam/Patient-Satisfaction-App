@@ -111,11 +111,11 @@ class QuestionController: UIViewController {
     }
     
     func setupViews() {
-        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
-        yesOutlet.layer.shadowOpacity = 0.5
-        yesOutlet.layer.shadowColor = UIColor.black.cgColor
-        yesOutlet.layer.shadowRadius = 35
- 
+//        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
+//        yesOutlet.layer.shadowOpacity = 0.5
+//        yesOutlet.layer.shadowColor = UIColor.black.cgColor
+//        yesOutlet.layer.shadowRadius = 35
+//
         yesOutlet.layer.cornerRadius = 32
         yesOutlet.layer.masksToBounds = true
         

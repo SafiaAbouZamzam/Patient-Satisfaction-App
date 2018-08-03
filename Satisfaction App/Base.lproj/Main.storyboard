@@ -18,41 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-MT-i8b">
-                                <rect key="frame" x="50" y="70" width="275" height="572"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The following will present a series of yes or no questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-Yl-UcA">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="191.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.89952375856164379" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-mj-PCj">
-                                        <rect key="frame" x="0.0" y="291.5" width="275" height="137.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
-                                        <state key="normal" title="Continue">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="continueButton:" destination="4Wa-xo-ecu" eventType="touchUpInside" id="GY9-lb-H0s"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="lF9-Hb-XkZ"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This survey was based on the RAND Medical Outcomes Study." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-rO-NE8">
-                                        <rect key="frame" x="0.0" y="529" width="275" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The following will present a series of yes or no questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-Yl-UcA">
+                                <rect key="frame" x="25" y="95" width="325" height="355.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.89952375856164379" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This survey was based on the RAND Medical Outcomes Study." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-rO-NE8">
+                                <rect key="frame" x="25" y="614" width="325" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-mj-PCj">
+                                <rect key="frame" x="25" y="510.5" width="325" height="58"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8995237586" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="4Wa-xo-ecu" eventType="touchUpInside" id="GY9-lb-H0s"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lF9-Hb-XkZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.00036008117604069412" green="0.17008224129676819" blue="0.41889643669128418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I7P-MT-i8b" firstAttribute="top" secondItem="RJA-iR-Rla" secondAttribute="top" constant="50" id="63L-iV-Aqz"/>
-                            <constraint firstItem="I7P-MT-i8b" firstAttribute="leading" secondItem="RJA-iR-Rla" secondAttribute="leading" constant="50" id="FsP-fS-7RV"/>
-                            <constraint firstItem="RJA-iR-Rla" firstAttribute="bottom" secondItem="I7P-MT-i8b" secondAttribute="bottom" constant="25" id="LJG-t1-S1A"/>
-                            <constraint firstItem="RJA-iR-Rla" firstAttribute="trailing" secondItem="I7P-MT-i8b" secondAttribute="trailing" constant="50" id="rgH-Mg-rjt"/>
+                            <constraint firstItem="RJA-iR-Rla" firstAttribute="trailing" secondItem="aRT-Yl-UcA" secondAttribute="trailing" constant="25" id="01m-zD-So9"/>
+                            <constraint firstItem="Q6g-mj-PCj" firstAttribute="top" secondItem="aRT-Yl-UcA" secondAttribute="bottom" constant="60" id="G75-aS-LrE"/>
+                            <constraint firstItem="aRT-Yl-UcA" firstAttribute="top" secondItem="RJA-iR-Rla" secondAttribute="top" constant="75" id="NrA-Ty-qGI"/>
+                            <constraint firstItem="aRT-Yl-UcA" firstAttribute="leading" secondItem="RJA-iR-Rla" secondAttribute="leading" constant="25" id="TCZ-De-Zb7"/>
+                            <constraint firstItem="Q6g-mj-PCj" firstAttribute="leading" secondItem="RJA-iR-Rla" secondAttribute="leading" constant="25" id="Uo9-Rw-MBy"/>
+                            <constraint firstItem="d0c-rO-NE8" firstAttribute="top" secondItem="Q6g-mj-PCj" secondAttribute="bottom" constant="45.5" id="Z5l-Mp-r3E"/>
+                            <constraint firstItem="RJA-iR-Rla" firstAttribute="trailing" secondItem="Q6g-mj-PCj" secondAttribute="trailing" constant="25" id="fo8-zV-J6M"/>
+                            <constraint firstItem="RJA-iR-Rla" firstAttribute="trailing" secondItem="d0c-rO-NE8" secondAttribute="trailing" constant="25" id="lu4-H3-lle"/>
+                            <constraint firstItem="RJA-iR-Rla" firstAttribute="bottom" secondItem="d0c-rO-NE8" secondAttribute="bottom" constant="10" id="ns2-q9-hCk"/>
+                            <constraint firstItem="d0c-rO-NE8" firstAttribute="leading" secondItem="RJA-iR-Rla" secondAttribute="leading" constant="25" id="vqp-MA-uNm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RJA-iR-Rla"/>
                     </view>
@@ -78,7 +80,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6Q-Tm-0Cv">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="199"/>
-                                        <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.87440385008169919" blue="0.66768982332516336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="Yes">
                                             <color key="titleColor" red="0.0" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +97,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-QM-2Ip">
                                         <rect key="frame" x="0.0" y="398.5" width="325" height="198.5"/>
-                                        <color key="backgroundColor" red="1" green="0.81960784313725488" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.87450980389999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="No">
                                             <color key="titleColor" red="0.0" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,7 +146,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-41-151">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="389"/>
-                                        <color key="backgroundColor" red="0.97311276197433472" green="0.85708695650100708" blue="0.66574651002883911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.87450980389999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="  Send Results  ">
                                             <color key="titleColor" red="0.25882352939999997" green="0.49019607840000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,7 +181,7 @@
                                     </scrollView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ULc-Da-0MH" firstAttribute="width" secondItem="TdK-41-151" secondAttribute="width" id="T8C-on-gU3"/>
+                                    <constraint firstItem="ULc-Da-0MH" firstAttribute="width" secondItem="TdK-41-151" secondAttribute="width" constant="-25" id="cpK-K0-UGM"/>
                                 </constraints>
                             </stackView>
                         </subviews>

@@ -20,13 +20,15 @@ class InstructionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
     
-//    func setupViews() {
-//        instructionVC.layer.cornerRadius = 24
-//        
-//        
-//    }
+    
+    func setupViews() {
+        continueOutlet.layer.cornerRadius = 24
+        continueOutlet.layer.masksToBounds = true
+        
+    }
     
     
     //background color option = 0558BD
