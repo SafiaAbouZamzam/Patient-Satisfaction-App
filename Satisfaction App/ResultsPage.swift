@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MessageUI
 
-class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
+class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate, UIScrollViewDelegate {
     var answers: [String] = []
     var questionArray: [String] = []
     var index: Int = 0
@@ -51,8 +51,12 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     override func viewDidLoad() {
+        scrollOutlet.contentInsetAdjustmentBehavior = .never
 
         setupViews()
+        
+        self.scrollOutlet.delegate = self
+        self.scrollOutlet.isDirectionalLockEnabled = true
         
 //        var toDisplayQuestion: String = ""
 //        for question in questionArray {
@@ -70,8 +74,15 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
 
         answerLabel.text = toDisplayQAndA
         
+        
 //        let both = toDisplayQuestion + "\n" + toDisplayAnswer
 //        answerLabel.text = both
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.x>0 {
+            scrollView.contentOffset.x = 0
+        }
     }
     
     func setupViews() {

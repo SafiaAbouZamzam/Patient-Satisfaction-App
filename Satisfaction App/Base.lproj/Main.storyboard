@@ -161,28 +161,26 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                     </textField>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-uk-Vya">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-uk-Vya">
                                         <rect key="frame" x="0.0" y="469" width="325" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="150" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Da-0MH">
-                                                <rect key="frame" x="8" y="18" width="309" height="91"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-Da-0MH">
+                                                <rect key="frame" x="15" y="15" width="295" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <color key="textColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ULc-Da-0MH" secondAttribute="bottom" constant="10" id="I2k-jS-wze"/>
-                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="top" secondItem="1jg-uk-Vya" secondAttribute="top" constant="10" id="LuJ-H3-nSV"/>
-                                            <constraint firstAttribute="trailing" secondItem="ULc-Da-0MH" secondAttribute="trailing" constant="10" id="YRm-mp-wfx"/>
-                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="leading" secondItem="1jg-uk-Vya" secondAttribute="leading" constant="10" id="qoZ-dp-q0k"/>
+                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="leading" secondItem="1jg-uk-Vya" secondAttribute="leading" constant="15" id="QjI-4M-BDo"/>
+                                            <constraint firstAttribute="trailing" secondItem="ULc-Da-0MH" secondAttribute="trailing" constant="15" id="RQM-8G-bED"/>
+                                            <constraint firstAttribute="bottom" secondItem="ULc-Da-0MH" secondAttribute="bottom" id="bPW-O4-dkc"/>
+                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="centerX" secondItem="1jg-uk-Vya" secondAttribute="centerX" id="dh1-9R-CKJ"/>
+                                            <constraint firstItem="ULc-Da-0MH" firstAttribute="top" secondItem="1jg-uk-Vya" secondAttribute="top" constant="15" id="hri-eF-0SJ"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="ULc-Da-0MH" firstAttribute="width" secondItem="TdK-41-151" secondAttribute="width" constant="-25" id="cpK-K0-UGM"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16862745098039217" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
