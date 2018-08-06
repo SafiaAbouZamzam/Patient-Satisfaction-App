@@ -38,7 +38,7 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate {
             else {return}
         composeVC.setToRecipients([email])
         composeVC.setSubject("Results")
-        composeVC.setMessageBody(toDisplayQAndA, isHTML: false)
+        composeVC.setMessageBody(toDisplayQAndA + "\n\(disclosure)", isHTML: false)
         
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)

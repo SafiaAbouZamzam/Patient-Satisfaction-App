@@ -31,12 +31,12 @@ class QuestionController: UIViewController {
                                     "4. Does your health limit you in: \n \na. vigorous activities (strenuous sports, lifting heavy objects)?",
                                     "b. moderate activities (moving a table, pushing a vacuum cleaner, bowling, or playing golf)?",
                                     
-                                    "5. Due to health, in the past month have you: \n \na. accomplished less than you would like?",
+                                    "5. Due to physical health, in the past month have you: \n \na. accomplished less than you would like?",
                                     "b. cut down the amount of time you spend on work or other activities?",
                                     "c. limited the kind of work or other activities?",
                                     "d. had difficulty performing the work or other activites?",
                                    
-                                    "6. Due to emotional problems, in the past month have you: \n \na. accomplished less than you would like?",
+                                    "6. Due to emotional health, in the past month have you: \n \na. accomplished less than you would like?",
                                     "b. cut down the amount of time you spend on work or other activities?",
                                     "c. performed work or other activities as carefully as usual?",
                                     
