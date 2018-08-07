@@ -31,7 +31,7 @@ class InstructionVC: UIViewController {
   
     
     func infoAlert() {
-        let alert = UIAlertController(title: " This survey is based on the RAND Medical Outcomes Study. ", message: " These questions have been altered for the purpose of this application. ", preferredStyle: .alert)
+        let alert = UIAlertController(title: " This survey is based on the RAND Medical Outcomes Study SF-36 survey. ", message: " These questions have been altered for the purpose of this application. ", preferredStyle: .alert)
         let action = UIAlertAction(title: "Back", style: .cancel, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
