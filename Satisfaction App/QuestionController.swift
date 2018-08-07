@@ -100,6 +100,9 @@ class QuestionController: UIViewController {
         questionLabel?.text = questionArray[0]
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       // guard let identifier = segue.identifier else {return}
@@ -111,22 +114,13 @@ class QuestionController: UIViewController {
     }
     
     func setupViews() {
-//        yesOutlet.layer.shadowOffset = CGSize(width: 0, height: 1)
-//        yesOutlet.layer.shadowOpacity = 0.5
-//        yesOutlet.layer.shadowColor = UIColor.black.cgColor
-//        yesOutlet.layer.shadowRadius = 35
-//
+        
         yesOutlet.layer.cornerRadius = 32
         yesOutlet.layer.masksToBounds = true
         
         noOutlet.layer.cornerRadius = 32
         noOutlet.layer.masksToBounds = true
         
- //       outputCardView.layer.borderWidth = 1
-//        outputCardView.layer.borderColor = UIColor.tcHotPink.cgColor
-        
-//        resetButton.layer.cornerRadius = 8
-//        resetButton.layer.masksToBounds = true
     }
 
     

@@ -15,7 +15,7 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate, UIScro
     var questionArray: [String] = []
     var index: Int = 0
     var toDisplayQAndA: String = ""
-    var disclosure: String = "This survey was based on the RAND Medical Outcomes Study."
+    var disclosure: String = "This survey is based on the RAND Medical Outcomes Study. \nThese questions have been altered for the purpose of this application. "
     
     @IBOutlet weak var sendOutlet: UIButton!
     @IBOutlet weak var answerLabel: UILabel!
@@ -83,6 +83,10 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate, UIScro
         if scrollView.contentOffset.x>0 {
             scrollView.contentOffset.x = 0
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func setupViews() {
