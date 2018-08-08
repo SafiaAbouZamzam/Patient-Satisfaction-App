@@ -51,7 +51,7 @@ class ResultsPage: UIViewController, MFMailComposeViewControllerDelegate, UIScro
     }
     
     override func viewDidLoad() {
-        scrollOutlet.contentInsetAdjustmentBehavior = .never
+       // scrollOutlet.contentInsetAdjustmentBehavior = .never
 
         setupViews()
         
